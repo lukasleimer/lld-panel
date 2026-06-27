@@ -1,13 +1,12 @@
-#!/bin/bash
+#!/bin/sh
 
 # LLD Panel - Container Entrypoint
 #
 # Orchestrates the startup sequence for the Django application:
-# 1. Verifies environment configuration
-# 2. Applies database migrations
-# 3. Collects static files
-# 4. Validates Django configuration
-# 5. Starts Gunicorn application server
+# 1. Applies database migrations
+# 2. Collects static files
+# 3. Validates Django configuration
+# 4. Starts Gunicorn application server
 #
 # All steps must succeed - any failure stops the container (set -e)
 
@@ -54,8 +53,9 @@ python manage.py check --deploy
 log_info "✓ Django configuration valid"
 
 # Step 4: Start Gunicorn application server
-# - Binds to 0.0.0.0:8000 (accessible from reverse proxy)
-# - 4 workers for concurrent request handling
+# - Binds to configurable address (default: 0.0.0.0:8000)
+# - Configurable worker count (default: 3 via GUNICORN_WORKERS)
+# - Configurable timeout (default: 120s via GUNICORN_TIMEOUT)
 # - Logs to stdout/stderr for container log capture
 # - exec: replaces shell process with Gunicorn (PID 1 for proper signal handling)
 log_info "───────────────────────────────────────────────────────────────"
