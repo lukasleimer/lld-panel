@@ -1,0 +1,29 @@
+/* ============================================================================
+   LLD PANEL - Main CSS Entry Point
+   ============================================================================
+   Dieser CSS-Bundle wird in base.html geladen und importiert
+   alle weiteren Module in der korrekten Reihenfolge.
+   
+   Ladeorder:
+   1. Design Tokens (CSS-Variablen)
+   2. Reset (Browser-Normalisierung)
+   3. Typography (Schriften und Text)
+   4. Layout (Globales Layout-System)
+   5. Components (UI-Komponenten)
+   
+   Diese Struktur garantiert:
+   - Globale Änderungen durch Tokens
+   - Keine Zirkular-Abhängigkeiten
+   - Wartbare, modulare Struktur
+   - Einfache Erweiterbarkeit
+============================================================================ */
+
+@import url('tokens.css');
+@import url('reset.css');
+@import url('typography.css');
+@import url('layout.css');
+@import url('components/button.css');
+@import url('components/form.css');
+@import url('components/table.css');
+@import url('components/panel.css');
+@import url('components/toolbar.css');

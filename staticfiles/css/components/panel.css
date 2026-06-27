@@ -1,0 +1,32 @@
+/* ============================================================================
+   PANEL COMPONENT
+   ============================================================================
+   Universelle Container-Komponente für Content-Abschnitte
+   Optional mit Header und Content-Bereichen
+============================================================================ */
+
+.panel {
+    background-color: var(--color-bg-secondary);
+    border: var(--border-width-thick) solid;
+    border-color: var(--color-button-highlight) var(--color-button-shadow) var(--color-button-shadow) var(--color-button-highlight);
+    padding: var(--spacing-lg);
+    margin-bottom: var(--spacing-lg);
+}
+
+.panel-header {
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: var(--spacing-md);
+    margin: calc(var(--spacing-lg) * -1);
+    margin-bottom: var(--spacing-lg);
+}
+
+.panel-header h2 {
+    margin: 0;
+    font-size: var(--font-size-md);
+    color: var(--color-header-text);
+}
+
+.panel-content {
+    padding: var(--spacing-lg);
+}

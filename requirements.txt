@@ -1,0 +1,12 @@
+# DEPRECATED - Diese Datei ist veraltet!
+#
+# Ab Sprint 4 werden Requirements modular organisiert:
+#
+#   pip install -r requirements/development.txt    # Lokal entwickeln
+#   pip install -r requirements/production.txt     # Production
+#
+# Siehe: docs/standards/dependencies.md
+#       requirements/README.md
+
+-r requirements/development.txt
+

@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}LLD Panel{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'css/panel.css' %}">
+</head>
+<body>
+    <div class="container">
+        {% include "components/header/header.html" %}
+
+        <div class="main-wrapper">
+            {% include "components/sidebar/sidebar.html" %}
+
+            <main class="app-content">
+                {% block content %}{% endblock %}
+            </main>
+        </div>
+
+        {% include "components/footer/footer.html" %}
+    </div>
+</body>
+</html>

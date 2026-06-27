@@ -1,0 +1,61 @@
+/* ============================================================================
+   FORM COMPONENT
+   ============================================================================
+   Formulare, Input-Felder, Textareas, Select-Dropdowns
+   Konsistentes Styling für alle Eingabetypen
+============================================================================ */
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"],
+input[type="date"],
+input[type="time"],
+textarea,
+select {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    padding: var(--spacing-xs) var(--spacing-sm);
+    background-color: var(--color-input-bg);
+    color: var(--color-input-text);
+    border: var(--border-width-thick) solid;
+    border-color: var(--color-button-shadow) var(--color-button-highlight) var(--color-button-highlight) var(--color-button-shadow);
+    width: 100%;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+textarea:focus,
+select:focus {
+    outline: none;
+    background-color: var(--color-input-bg);
+}
+
+input[type="checkbox"],
+input[type="radio"] {
+    margin-right: var(--spacing-sm);
+}
+
+label {
+    display: block;
+    margin-bottom: var(--spacing-sm);
+    font-size: var(--font-size-base);
+    color: var(--color-text-primary);
+}
+
+.form-group {
+    margin-bottom: var(--spacing-lg);
+}
+
+.form-row {
+    display: flex;
+    gap: var(--spacing-lg);
+}
+
+.form-col {
+    flex: 1;
+}

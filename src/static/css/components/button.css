@@ -1,0 +1,32 @@
+/* ============================================================================
+   BUTTON COMPONENT
+   ============================================================================
+   Buttons sind klickbare Elemente mit 3D-Effekt (klassischer Windows-Stil)
+   Zustände: normal, hover, active, disabled
+============================================================================ */
+
+button, .btn {
+    font-family: var(--font-family);
+    font-size: var(--font-size-base);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    background-color: var(--color-button-face);
+    color: var(--color-text-primary);
+    border: var(--border-width-thick) solid;
+    border-color: var(--color-button-highlight) var(--color-button-shadow) var(--color-button-shadow) var(--color-button-highlight);
+    cursor: pointer;
+    min-width: 75px;
+    text-align: center;
+}
+
+button:hover, .btn:hover {
+    background-color: var(--color-button-highlight);
+}
+
+button:active, .btn:active {
+    border-color: var(--color-button-shadow) var(--color-button-highlight) var(--color-button-highlight) var(--color-button-shadow);
+}
+
+button:disabled, .btn:disabled {
+    color: var(--color-text-secondary);
+    cursor: not-allowed;
+}

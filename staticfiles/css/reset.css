@@ -1,0 +1,16 @@
+/* ============================================================================
+   CSS RESET
+   ============================================================================
+   Normalisiert Browser-Defaults für konsistentes Verhalten
+   Sorgt für einheitliche Basis auf allen Browsern
+============================================================================ */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}

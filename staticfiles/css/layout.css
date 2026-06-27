@@ -1,0 +1,235 @@
+/* ============================================================================
+   LAYOUT
+   ============================================================================
+   Globales Layout-System: Container, Header, Navigation, Content, Footer
+   Flexbox-basiert für dynamische Layout-Verwaltung
+============================================================================ */
+
+.container {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    background-color: var(--color-bg-primary);
+}
+
+.app-header {
+    flex-shrink: 0;
+    height: var(--height-header);
+    background-color: var(--color-header-bg);
+    color: var(--color-header-text);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    border-bottom: var(--border-width-thick) solid var(--color-border-dark);
+    display: flex;
+    align-items: center;
+}
+
+.app-header h1 {
+    margin: 0;
+    font-size: var(--font-size-lg);
+    color: var(--color-header-text);
+}
+
+.main-wrapper {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+}
+
+.app-nav {
+    flex-shrink: 0;
+    width: var(--width-nav);
+    background-color: var(--color-nav-bg);
+    border-right: var(--border-width-thick) solid var(--color-border-dark);
+    overflow-y: auto;
+}
+
+.app-nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.app-nav li {
+    border-bottom: var(--border-width) solid var(--color-border-dark);
+}
+
+.app-nav li:last-child {
+    border-bottom: none;
+}
+
+.app-nav a {
+    display: block;
+    padding: var(--spacing-md) var(--spacing-lg);
+    color: var(--color-text-primary);
+    text-decoration: none;
+    font-size: var(--font-size-base);
+    border: none;
+}
+
+.app-nav a:hover {
+    background-color: var(--color-button-highlight);
+    text-decoration: none;
+}
+
+.app-nav a:active {
+    background-color: var(--color-button-face);
+}
+
+.app-content {
+    flex: 1;
+    overflow: auto;
+    padding: var(--spacing-lg);
+    background-color: var(--color-bg-primary);
+}
+
+.app-footer {
+    flex-shrink: 0;
+    height: var(--height-footer);
+    background-color: var(--color-footer-bg);
+    color: var(--color-footer-text);
+    border-top: var(--border-width-thick) solid var(--color-border-dark);
+    padding: var(--spacing-sm) var(--spacing-lg);
+    display: flex;
+    align-items: center;
+    font-size: var(--font-size-sm);
+}
+
+.app-footer p {
+    margin: 0;
+}
+
+
+/* ============================================================================
+   UTILITY CLASSES
+   ============================================================================
+   Häufig verwendete Utility-Klassen für Abstände, Text, Layout
+============================================================================ */
+
+.text-center {
+    text-align: center;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-left {
+    text-align: left;
+}
+
+.m-0 {
+    margin: 0;
+}
+
+.mb-xs {
+    margin-bottom: var(--spacing-xs);
+}
+
+.mb-sm {
+    margin-bottom: var(--spacing-sm);
+}
+
+.mb-md {
+    margin-bottom: var(--spacing-md);
+}
+
+.mb-lg {
+    margin-bottom: var(--spacing-lg);
+}
+
+.mt-xs {
+    margin-top: var(--spacing-xs);
+}
+
+.mt-sm {
+    margin-top: var(--spacing-sm);
+}
+
+.mt-md {
+    margin-top: var(--spacing-md);
+}
+
+.mt-lg {
+    margin-top: var(--spacing-lg);
+}
+
+.ml-xs {
+    margin-left: var(--spacing-xs);
+}
+
+.ml-sm {
+    margin-left: var(--spacing-sm);
+}
+
+.ml-md {
+    margin-left: var(--spacing-md);
+}
+
+.ml-lg {
+    margin-left: var(--spacing-lg);
+}
+
+.p-0 {
+    padding: 0;
+}
+
+.p-sm {
+    padding: var(--spacing-sm);
+}
+
+.p-md {
+    padding: var(--spacing-md);
+}
+
+.p-lg {
+    padding: var(--spacing-lg);
+}
+
+.hidden {
+    display: none;
+}
+
+.inline-block {
+    display: inline-block;
+}
+
+.block {
+    display: block;
+}
+
+.flex {
+    display: flex;
+}
+
+.gap-sm {
+    gap: var(--spacing-sm);
+}
+
+.gap-md {
+    gap: var(--spacing-md);
+}
+
+.gap-lg {
+    gap: var(--spacing-lg);
+}
+
+.w-full {
+    width: 100%;
+}
+
+.w-half {
+    width: 50%;
+}
+
+.w-third {
+    width: 33.333%;
+}
+
+.text-muted {
+    color: var(--color-text-secondary);
+}
+
+.border-top {
+    border-top: var(--border-width-thick) solid var(--color-border-dark);
+    padding-top: var(--spacing-md);
+}

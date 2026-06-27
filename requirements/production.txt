@@ -1,0 +1,13 @@
+-r base.txt
+
+# WSGI Server
+gunicorn==21.2.0
+
+# Database
+psycopg2-binary==2.9.6
+
+# Security & CORS
+django-cors-headers==4.2.0
+
+# Performance
+django-cacheops==7.0.2

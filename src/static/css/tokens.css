@@ -1,0 +1,64 @@
+/* ============================================================================
+   DESIGN TOKENS
+   ============================================================================
+   Zentrale Design-Variablen für konsistentes, wartbares Design
+   Änderungen hier wirken sich auf alle Komponenten aus
+============================================================================ */
+
+:root {
+    /* Colors - Primary */
+    --color-bg-primary: #c0c0c0;
+    --color-bg-secondary: #dfdfdf;
+    
+    /* Colors - Text */
+    --color-text-primary: #000000;
+    --color-text-secondary: #666666;
+    
+    /* Colors - Borders */
+    --color-border-dark: #808080;
+    --color-border-light: #ffffff;
+    --color-border-highlight: #dfdfdf;
+    
+    /* Colors - Buttons */
+    --color-button-face: #c0c0c0;
+    --color-button-shadow: #808080;
+    --color-button-highlight: #dfdfdf;
+    
+    /* Colors - Forms */
+    --color-input-bg: #ffffff;
+    --color-input-border: #808080;
+    --color-input-text: #000000;
+    
+    /* Colors - Navigation */
+    --color-nav-bg: #c0c0c0;
+    
+    /* Colors - Header & Footer */
+    --color-header-bg: #000080;
+    --color-header-text: #ffffff;
+    --color-footer-bg: #c0c0c0;
+    --color-footer-text: #000000;
+    
+    /* Spacing Scale */
+    --spacing-xs: 4px;
+    --spacing-sm: 8px;
+    --spacing-md: 12px;
+    --spacing-lg: 16px;
+    --spacing-xl: 20px;
+    
+    /* Typography */
+    --font-family: Segoe UI, Tahoma, Arial, sans-serif;
+    --font-size-base: 11px;
+    --font-size-sm: 10px;
+    --font-size-md: 12px;
+    --font-size-lg: 14px;
+    --font-size-header: 16px;
+    
+    /* Borders */
+    --border-width: 1px;
+    --border-width-thick: 2px;
+    
+    /* Layout */
+    --height-header: 40px;
+    --height-footer: 28px;
+    --width-nav: 200px;
+}
