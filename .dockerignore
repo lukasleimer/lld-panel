@@ -1,0 +1,84 @@
+# Git and version control
+.git/
+.gitignore
+.github/
+
+# Python runtime and cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Virtual environments
+.venv/
+venv/
+ENV/
+env/
+.virtualenv
+
+# Development and testing
+db.sqlite3
+.coverage
+.pytest_cache/
+htmlcov/
+test-results/
+.tox/
+.nox/
+
+# IDE and editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+*.sublime-project
+*.sublime-workspace
+
+# Operating system files
+.DS_Store
+Thumbs.db
+.directory
+
+# Environment files (use environment variables at runtime)
+.env
+.env.local
+.env.*.local
+.env.development
+.env.development.local
+
+# Development and documentation
+DEVELOPMENT.md
+docs/
+*.md
+
+# Docker files (not needed in image)
+docker-compose.yml
+docker-compose.override.yml
+Dockerfile
+.dockerignore
+
+# Runtime-generated files (recreated during startup)
+staticfiles/
+media/
+
+# Node/npm (not used, but just in case)
+node_modules/
+npm-debug.log
+yarn-error.log
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.circleci/
+
+# Misc
+*.log
+*.pot
+.bak
+*.tmp
+.sass-cache/
