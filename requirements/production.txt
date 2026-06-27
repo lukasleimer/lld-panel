@@ -4,7 +4,7 @@
 gunicorn==21.2.0
 
 # Database
-psycopg[binary]==3.2.9
+psycopg[binary]==3.2.13
 
 # Security & CORS
 django-cors-headers==4.2.0
